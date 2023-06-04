@@ -1,0 +1,85 @@
+/* body */
+main {
+    padding-top: 100px;
+}
+
+/* 背景 */
+.works-page {
+    background-color: #FBFED2;
+    z-index: 0;
+}
+
+.works-wapper {
+    background-color: #fff;
+}
+
+.bg-title_works-page {
+    position: relative;
+    margin-top: 20%;
+}
+
+.bg-white_works-page {
+    position: relative;
+    z-index: 1;
+    transform: translate(0,-14%);
+}
+
+.bg_works-page::before {
+    content: "";
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    top: 6vw;
+    width: 100vw;
+    height: 50vw;
+    border-radius: 50% 50% 0 0;
+    left: 50%;
+    transform: translateX(-50%) scale(1.76);
+    z-index: 1;
+}
+
+/* タイトル */
+.sub-title_works-page {
+    text-align: center;
+    color: #131313;
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-top: 64px;
+}
+
+.goal-title_works-page {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #131313;
+    background-color: #FBFED2;
+    width: 50%;
+    margin: 16px auto;
+    padding: 14px;
+    border-radius: 9999px;
+}
+
+/*  flex  */
+.flex_works-page {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 64px auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* テキストエリア */
+.description-wrapper_works-page {
+    margin: 16px;
+}
+
+/* スライド画像エリア */
+.slider_works-page img {
+    max-width: 540px;
+}
+
+/* ボタン */
+.btn-more_wrapper {
+    text-align: center;
+    padding: 20% 0;
+}

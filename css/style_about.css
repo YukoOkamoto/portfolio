@@ -1,0 +1,200 @@
+/* body */
+main {
+    padding-top: 100px;
+}
+
+/* 背景 */
+.about-page {
+    background-color: #FBFED2;
+    z-index: 0;
+}
+
+.about-wapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bg_about-page {
+    display: block;
+    background-color: #fff;
+    position: relative;
+    width: 120vw;
+    height: 10vw;
+    border-radius: 50% 50% 0 0;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    z-index: 1;
+}
+
+.bg-white_about-page {
+    background-color: #fff;
+}
+
+/*  flex  */
+.flex_about-page {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 64px auto;
+}
+
+/* 自分写真エリア */
+.photo_about-page img {
+    width: 148px;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+/* テキストエリア */
+.text-area_about-page {
+    margin: 16px;
+}
+
+/* 自己紹介 */
+.introduction_about ul {
+	margin: 1em 0;
+	padding-left: 40px;
+    list-style: disc;
+}
+
+.list-introduction_about li {
+    line-height: 1.6em;
+}
+
+/* リンクエリア */
+.link-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-link {
+    margin: 4px;
+}
+
+/* 略歴 */
+.biography_wrapper {
+    display: block;
+    margin: 40px auto;
+    width: 100%;
+    max-width: 752px;
+    font-size: 1.6em;
+    line-height: 1.6;
+    border-left: 1px dashed #131313;
+}
+
+.biography_wrapper li {
+    position: relative;
+    padding: 6px;
+    margin: 24px 80px;
+    text-align: left;
+}
+
+.list_biography::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -24%;
+    background-color: #FBFED2;
+    width: 20%;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-size: 1.6rem;
+    text-align: center;
+} 
+
+
+.list_2011::before {
+    content: "大学卒業後";
+} 
+.list_2015::before {
+    content: "2015年";
+} 
+.list_2017::before {
+    content: "2017年";
+} 
+.list_2018::before {
+    content: "2018年";
+} 
+.list_achievement::before {
+    content: "Achievement";
+    background-color: #FAD0E6;
+} 
+.list_2019::before {
+    content: "2019年";
+} 
+.list_2022::before {
+    content: "2022年";
+} 
+.list_2023::before {
+    content: "2023";
+    background-color: #fff;
+    border: 1px dashed #131313;
+} 
+
+/* 年表リスト */
+.list_biography {
+    margin: 16px;
+}
+
+.content_biography h3,
+.content_biography-gray h3 {
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+.content_biography-gray-second {
+    margin-top: 16px;
+}
+
+.content_biography h4 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 24px;
+}
+
+.content_biography-gray {
+    background-color: #FBFBFB;
+    padding: 56px 72px;
+    margin-top: 24px;
+    border-radius: 10%;
+}
+
+/* きっかけ */
+.opportunity_about-page {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.title_about-page {
+    text-align: left;
+}
+
+.sub-title_about-page {
+    text-align: left;
+    color: #E8D575;
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-top: 24px;
+}
+
+.opportunity_about-page p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-top: 16px;
+}
+
+.maker_about-page {
+    background:linear-gradient(transparent 50%, #E8D575 20%);
+}
+
+/* ボタン */
+.btn-more_wrapper {
+    text-align: center;
+    padding: 20% 0;
+}
