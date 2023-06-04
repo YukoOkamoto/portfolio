@@ -267,8 +267,7 @@ a {
     top: -100px;
 }
 
-/* WORKS-WEB */
-/* green */
+/* WORKS-WEB green */
 .green {
     position: relative;
     background-color: #DFFCED;
@@ -449,8 +448,7 @@ a {
 }
 
 
-/* WORKS-Banner */
-/* 背景 blue */
+/* WORKS-Banner blue */
 .blue {
     position: relative;
     background-color: #E5FBFC;
@@ -478,8 +476,7 @@ a {
     width: 72%;
 }
 
-/* SKILLs */
-/* 背景 yellow */
+/* SKILLs yellow  */
 .skills-yellow {
     position: relative;
     width: 100%;
@@ -552,8 +549,7 @@ a {
 }
 
 
-/* footer */
-/* 背景　点線 */
+/* footer 点線 */
 .footer {
     position: relative;
     border: 1px dashed #131313;
