@@ -276,10 +276,10 @@ a {
 }
 
 /* flexエリア */
-.flex_works {
+.flex_works-green {
     display: flex;
     justify-content: space-evenly;
-    margin: 10% 0 20% 0;
+    margin: 8% 0;
 }
 
 .contents_description-web,.slider {
@@ -309,26 +309,18 @@ a {
     color: #9DB3A7;
 }
 
-.circle-web_side-title img {
-    margin-top: -24px;
-}
-
 .circle-web_side-title {
     position: absolute;
-    top: -6%;
+    top: -13%;
     left: -80%;
     width: 180%;
     opacity: 0.5;
     animation: linear circle_rotate 30s infinite;
 }
 
-.circle-banner_side-title img {
-    margin-top: 8px;
-}
-
 .circle-banner_side-title {
     position: absolute;
-    top: -6%;
+    top: -9%;
     left: -80%;
     width: 180%;
     opacity: 0.5;
@@ -452,12 +444,18 @@ a {
 .blue {
     position: relative;
     background-color: #E5FBFC;
-    padding: 72px 0 72px 0;
     z-index: 0;
 }
 
 .side-title,.side-blue {
     color: #A2B2B3;
+}
+
+/* flexエリア */
+.flex_works-blue {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10% 0 20% 0;
 }
 
 /* テキストエリア */
@@ -553,7 +551,7 @@ a {
 .footer {
     position: relative;
     border: 1px dashed #131313;
-    margin: 80px calc(50% - 70vw);
+    margin: 24px calc(50% - 70vw);
     width: 140vw;
     height: 40%;
     border-radius: 50%;

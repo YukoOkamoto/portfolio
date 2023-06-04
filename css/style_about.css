@@ -29,6 +29,7 @@ main {
 
 .bg-white_about-page {
     background-color: #fff;
+    padding-bottom: 64px;
 }
 
 /*  flex  */
@@ -191,5 +192,5 @@ main {
 /* ボタン */
 .btn-more_wrapper {
     text-align: center;
-    padding: 20% 0;
+    padding: 10% 0;
 }
