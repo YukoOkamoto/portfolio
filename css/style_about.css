@@ -60,10 +60,6 @@ main {
     list-style: disc;
 }
 
-.list-introduction_about li {
-    line-height: 1.6em;
-}
-
 /* リンクエリア */
 .link-list {
     display: flex;
@@ -82,7 +78,7 @@ main {
     margin: 40px auto;
     width: 100%;
     max-width: 752px;
-    font-size: 1.6em;
+    font-size: 16px;
     line-height: 1.6;
     border-left: 1px dashed #131313;
 }
@@ -103,7 +99,7 @@ main {
     width: 20%;
     padding: 6px 16px;
     border-radius: 100px;
-    font-size: 1.6rem;
+    font-size: 16px;
     text-align: center;
 } 
 
@@ -143,7 +139,7 @@ main {
 
 .content_biography h3,
 .content_biography-gray h3 {
-    font-size: 2.0rem;
+    font-size: 20px;
     font-weight: bold;
 }
 
@@ -152,7 +148,7 @@ main {
 }
 
 .content_biography h4 {
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: bold;
     margin-top: 24px;
 }
@@ -178,14 +174,13 @@ main {
 .sub-title_about-page {
     text-align: left;
     color: #E8D575;
-    font-size: 2.0rem;
+    font-size: 20px;
     font-weight: bold;
     margin-top: 24px;
 }
 
 .opportunity_about-page p {
-    font-size: 1.6rem;
-    line-height: 1.6;
+    font-size: 16px;
     margin-top: 16px;
 }
 

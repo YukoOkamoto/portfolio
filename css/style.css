@@ -2,7 +2,7 @@
 
 /* 全体 */
 html {
-    font-size: 62.5%;
+    font-size: 100%;
 }
 
 * {
@@ -11,13 +11,12 @@ html {
     border: 0;
     font: inherit;
     vertical-align: baseline;
-    /* outline: 1px solid red; */
 }
 
 body {
     color: #131313;
     font-family: "Helvetica", "Noto Sans JP", sans-serif;
-    line-height: 1
+    line-height: 1.6;
 }
 
 ul,li {
@@ -27,10 +26,6 @@ ul,li {
 a {
     color: #131313;
     text-decoration: none;
-}
-
-#main {
-    overflow: hidden;
 }
 
 /* 共通 */
@@ -48,6 +43,11 @@ a {
     overflow: hidden;
 }
 
+/* --ボタン(リンク) */
+.btn-link img {
+    height: 20px;
+}
+
 /* --ボタン(more) */
 .btn-more_wrapper {
     margin-top: 24px;
@@ -55,7 +55,7 @@ a {
 
 .btn-more_wrapper > .btn-more {
     border-bottom: 5px solid #131313;
-    font-size: 2.4em;
+    font-size: 24px;
     padding-bottom: 16px;
     transition: padding-bottom 0.2s, margin-bottom 0.2s;
 }
@@ -64,7 +64,7 @@ a {
     padding-bottom: 8px;
 }
 
-/* ボタン_ABOUT */
+/* --ボタン(ABOUT-more) */
 .btn_about {
     margin-top: 24px;
     text-align: center;
@@ -72,7 +72,7 @@ a {
 
 .btn_about > .btn-more {
     border-bottom: 5px solid #131313;
-    font-size: 2.4em;
+    font-size: 24px;
     padding-bottom: 16px;
     transition: padding-bottom 0.2s, margin-bottom 0.2s;
 }
@@ -81,18 +81,12 @@ a {
     padding-bottom: 8px;
 }
 
-/* --ボタン(リンク) */
-.btn-link img {
-    height: 20px;
-}
-
 /* --タイトル */
 .title {
     display: block;
-    font-size: 3.2em;
+    font-size: 32px;
     font-weight: 400;
     text-align: center;
-    padding-top: 56px;
 }
 
 
@@ -100,7 +94,7 @@ a {
 .header {
     width: 100%;
     position: fixed;
-    z-index: 1000;
+    z-index: 999;
     padding-right: 24px;
 }
 
@@ -130,28 +124,26 @@ a {
 }
 
 .nav-item {
-    font-size: 1.6em;
+    font-size: 16px;
 }
 
-/* メインビジュアル */
-/* --イメージ 木 */
+/* メインビジュアル--イメージ 木 */
 .img_top-view img {
     display: block;
     position: relative;
     width: 50%;
     max-width: 784px;
     margin: 0 auto;
-    padding-top: 32px;
+    padding-top: 48px;
     z-index: 10;
 }
 
-/* 背景 ハロー */
+/* ハロー--背景 */
 .img_top-view::after{
     content: "HELLO";
     position: absolute;
-    top: 16%;
+    top: 10%;
     left: 0;
-    padding-top: 80px;
     color: #FBFED2;
     font-size: 29vw;
     font-weight: bold;
@@ -159,18 +151,12 @@ a {
     z-index: -10;
 }
 
-/* ABOUT */
-/* 背景 */
+/* ABOUT--背景 */
 .about-yellow {
     position: relative;
     width: 100%;
     overflow: hidden;
     top: -70px;
-}
-
-.yellow {
-    background-color: #FBFED2;
-    padding-bottom: 32px;
 }
 
 .circle-before_yellow-bg {
@@ -184,6 +170,11 @@ a {
     transform: translateX(-50%) scale(1);
     overflow: hidden;
     z-index: 1;
+}
+
+.yellow {
+    background-color: #FBFED2;
+    padding-bottom: 32px;
 }
 
 .circle-after_yellow-bg {
@@ -205,7 +196,6 @@ a {
 }
 
 
-
 /* --氏名 */
 .name_about {
     display: flex;
@@ -214,17 +204,17 @@ a {
 }
 
 .jp-name_about {
-    font-size: 2.4em;
+    font-size: 24px;
+    line-height: 1;
 }
 
 .en-name_about {
-    font-size: 2.0em;
-    margin-top: 8px;
+    font-size: 20px;
 }
 
 /* --自己紹介 */
 .introduction_about {
-    font-size: 1.6em;
+    font-size: 16px;
     margin-top: 16px;
 }
 
@@ -232,7 +222,7 @@ a {
 /* 写真ループエリア */
 .loop_container {
     position: relative;
-    padding: 30px;
+    padding: 60px;
     display: flex;
     overflow: hidden;
     text-align: center;
@@ -251,6 +241,10 @@ a {
     border-radius: 8%;
     object-fit: cover;
     aspect-ratio: 1 / 1;
+}
+
+.item_loop p {
+    font-size: 13px;
 }
 
 
@@ -305,7 +299,7 @@ a {
 .side-title {
     writing-mode: vertical-lr;
     text-orientation: upright;
-    font-size: 6.4em;
+    font-size: 64px;
     font-weight: bold;
     margin: 16px;
     height: 100%;
@@ -365,14 +359,14 @@ a {
 }
 
 .list_description th {
-    font-size: 2.4em;
-    line-height: 1.6em;
+    font-size: 24px;
+    line-height: 1.3;
 }
 
 .list_description td {
-    font-size: 1.6em;
+    font-size: 16px;
     text-indent: 1em;
-    line-height: 1.3em;
+    line-height: 1.6;
 }
 
 /* ボタン */
@@ -540,7 +534,7 @@ a {
 }
 
 .text-area_contact p {
-    font-size: 1.6em;
+    font-size: 16px;
 }
 
 /* ボタン */
@@ -552,7 +546,7 @@ a {
 .contact_btn a {
     color: #FAF8F5;
     background-color: #333333;
-    font-size: 1.6em;
+    font-size: 16px;
     padding: 1.2em 8em;
     border-radius: 100px;
 }
