@@ -166,6 +166,16 @@ main {
     border: 1px dashed #131313;
 } 
 
+@media screen and (max-width: 900px) {
+    .biography_wrapper {
+        margin: 82px 0 0 90px;
+    }
+    .list_biography::before {
+        width: 130px;
+        left: -143px
+    } 
+}
+
 @media screen and (max-width: 600px) {
     .biography_wrapper {
         margin: 82px 0 0 40px;
@@ -231,10 +241,12 @@ main {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
+    padding-bottom: 48px;
 }
 
 .title_about-page {
     text-align: left;
+    margin: 16px;
 }
 
 .sub-title_about-page {
@@ -242,12 +254,12 @@ main {
     color: #E8D575;
     font-size: 20px;
     font-weight: bold;
-    margin-top: 24px;
+    margin: 24px;
 }
 
 .opportunity_about-page p {
     font-size: 16px;
-    margin-top: 16px;
+    margin: 24px;
 }
 
 .maker_about-page {
@@ -261,9 +273,6 @@ main {
     }
     .sub-title_about-page {
         margin: 24px 16px;
-    }
-    .opportunity_about-page {
-        padding-bottom: 48px;
     }
 }
 
