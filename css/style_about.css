@@ -39,6 +39,15 @@ main {
     margin: 64px auto;
 }
 
+@media screen and (max-width: 600px) {
+    .flex_about-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 64px auto;
+    }
+}
+
 /* 自分写真エリア */
 .photo_about-page img {
     width: 148px;
@@ -53,11 +62,30 @@ main {
     margin: 16px;
 }
 
+/* 氏名 */
+@media screen and (max-width: 600px) {
+    .name_about-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .jp-name_about,
+    .en-name_about {
+        display: block;
+    }
+}
+
 /* 自己紹介 */
 .introduction_about ul {
 	margin: 1em 0;
 	padding-left: 40px;
     list-style: disc;
+}
+
+@media screen and (max-width: 600px) {
+    .introduction_about ul {
+        padding-left: 0;
+    }
 }
 
 /* リンクエリア */
@@ -66,6 +94,12 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .link-list {
+        flex-direction: row;
+    }
 }
 
 .btn-link {
@@ -132,6 +166,27 @@ main {
     border: 1px dashed #131313;
 } 
 
+@media screen and (max-width: 600px) {
+    .biography_wrapper {
+        margin: 82px 0 0 40px;
+    }
+    .biography_wrapper li {
+        position: relative;
+        padding: 6px;
+        margin: 24px 16px;
+        text-align: left;
+        width: 80%;
+    }
+    .biography_wrapper li {
+        padding: 9px 0 37px;
+    }
+    .list_biography::before {
+        top: -32px;
+        left: -50px;
+        width: 160px;
+    } 
+}
+
 /* 年表リスト */
 .list_biography {
     margin: 16px;
@@ -159,6 +214,17 @@ main {
     margin-top: 24px;
     border-radius: 10%;
 }
+
+@media screen and (max-width: 600px) {
+    .content_biography-gray {
+        padding: 32px;
+    }
+    .content_biography h3,
+    .content_biography-gray h3 {
+    font-size: 18px;
+}
+}
+
 
 /* きっかけ */
 .opportunity_about-page {
@@ -188,8 +254,22 @@ main {
     background:linear-gradient(transparent 50%, #E8D575 20%);
 }
 
+@media screen and (max-width: 600px) {
+    .opportunity_about-page p,
+    .title_about-page  {
+        margin: 16px;
+    }
+    .sub-title_about-page {
+        margin: 24px 16px;
+    }
+    .opportunity_about-page {
+        padding-bottom: 48px;
+    }
+}
+
 /* ボタン */
 .btn-more_wrapper {
     text-align: center;
     padding: 20% 0;
+    margin-bottom: 80px;
 }
