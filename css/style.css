@@ -452,8 +452,7 @@ a {
     top: -120px;
 }
 
-/* WORKS-WEB */
-/* green */
+/* WORKS-WEB green */
 .green {
     position: relative;
     background-color: #DFFCED;
@@ -462,7 +461,7 @@ a {
 }
 
 /* flexエリア */
-.flex_works {
+.flex_works-green {
     display: flex;
     justify-content: space-evenly;
     margin: 6% 0;
@@ -533,26 +532,18 @@ a {
     color: #9DB3A7;
 }
 
-.circle-web_side-title img {
-    margin-top: -24px;
-}
-
 .circle-web_side-title {
     position: absolute;
-    top: -6%;
+    top: -13%;
     left: -80%;
     width: 260px;
     opacity: 0.5;
     animation: linear circle_rotate 30s infinite;
 }
 
-.circle-banner_side-title img {
-    margin-top: 8px;
-}
-
 .circle-banner_side-title {
     position: absolute;
-    top: -6%;
+    top: -9%;
     left: -80%;
     width: 260px;
     opacity: 0.5;
@@ -722,8 +713,7 @@ a {
 }
 
 
-/* WORKS-Banner */
-/* 背景 blue */
+/* WORKS-Banner blue */
 .blue {
     position: relative;
     background-color: #E5FBFC;
@@ -733,6 +723,13 @@ a {
 
 .side-title,.side-blue {
     color: #A2B2B3;
+}
+
+/* flexエリア */
+.flex_works-blue {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10% 0 20% 0;
 }
 
 /* テキストエリア */
@@ -746,9 +743,7 @@ a {
         margin: 0 auto;
         padding-bottom: 32px;
     }
-
 }
-
 
 /* 画像エリア */
 .banner_wrapper {
@@ -765,7 +760,6 @@ a {
         width:80%;
         margin: 0 auto;
     }
-
 }
 
 /* SKILLs */
@@ -849,8 +843,7 @@ a {
 }
 
 
-/* footer */
-/* 背景　点線 */
+/* footer 点線 */
 .footer {
     position: relative;
     border: 1px dashed #131313;

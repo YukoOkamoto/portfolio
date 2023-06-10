@@ -29,6 +29,7 @@ main {
 
 .bg-white_about-page {
     background-color: #fff;
+    padding-bottom: 64px;
 }
 
 /*  flex  */
