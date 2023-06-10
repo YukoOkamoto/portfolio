@@ -29,6 +29,7 @@ main {
 
 .bg-white_about-page {
     background-color: #fff;
+    padding-bottom: 64px;
 }
 
 /*  flex  */
@@ -39,7 +40,7 @@ main {
     margin: 64px auto;
 }
 
-/* 自分写真エリア */
+/* 写真エリア */
 .photo_about-page img {
     width: 148px;
     height: 100%;
