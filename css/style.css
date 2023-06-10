@@ -461,7 +461,7 @@ a {
 }
 
 /* flexエリア */
-.flex_works-green {
+.flex_works {
     display: flex;
     justify-content: space-evenly;
     margin: 6% 0;
@@ -532,18 +532,26 @@ a {
     color: #9DB3A7;
 }
 
+.circle-web_side-title img {
+    margin-top: -24px;
+}
+
 .circle-web_side-title {
     position: absolute;
-    top: -13%;
+    top: -6%;
     left: -80%;
     width: 260px;
     opacity: 0.5;
     animation: linear circle_rotate 30s infinite;
 }
 
+.circle-banner_side-title img {
+    margin-top: 8px;
+}
+
 .circle-banner_side-title {
     position: absolute;
-    top: -9%;
+    top: -6%;
     left: -80%;
     width: 260px;
     opacity: 0.5;
@@ -723,13 +731,6 @@ a {
 
 .side-title,.side-blue {
     color: #A2B2B3;
-}
-
-/* flexエリア */
-.flex_works-blue {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 10% 0 20% 0;
 }
 
 /* テキストエリア */
