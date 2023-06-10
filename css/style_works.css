@@ -77,9 +77,3 @@ main {
 .slider_works-page img {
     max-width: 540px;
 }
-
-/* ボタン */
-.btn-more_wrapper {
-    text-align: center;
-    padding: 10% 0;
-}
