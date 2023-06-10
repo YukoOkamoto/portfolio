@@ -58,6 +58,13 @@ main {
     border-radius: 999px;
 }
 
+@media screen and (max-width: 999px) {
+    .goal-title_works-page {
+        width: 80%;
+        margin: 24px auto;
+    }
+}
+
 /*  flex  */
 .flex_works-page {
     display: flex;
@@ -68,6 +75,23 @@ main {
     max-width: 1200px;
 }
 
+.description_wrapper {
+    width: 46%;
+}
+
+@media screen and (max-width: 999px) {
+    .flex_works-page {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .description_wrapper {
+        width: 70%;
+    }
+    .contents_description-web {
+        justify-content: center;
+    }
+}
+
 /* テキストエリア */
 .description-wrapper_works-page {
     margin: 16px;
@@ -76,4 +100,10 @@ main {
 /* スライド画像エリア */
 .slider_works-page img {
     max-width: 540px;
+}
+
+@media screen and (max-width: 999px) {
+    .slider_works-page img {
+        max-width: 320px;
+    }
 }
