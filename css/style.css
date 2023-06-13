@@ -861,14 +861,14 @@ a {
 .nav-area_footer {
     display: flex;
     flex-direction: column;
-    margin: 64px;
+    margin-top: 64px;
 }
 
 .nav-list_footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 8px;
+    margin: 8px;
 }
 
 .nav-list_footer li+li {
@@ -877,6 +877,15 @@ a {
 
 .nav-item_footer {
     font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-area_footer {
+        margin: 64px;
+    }
+    .nav-list_footer {
+        margin-top: 8px;
+    }
 }
 
 /* THANK YOU */
@@ -895,7 +904,7 @@ a {
 /* ロゴ */
 .logo-footer img {
     position: absolute;
-    top: 52%;
+    top: 49%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 10%;
@@ -904,7 +913,7 @@ a {
 
 @media screen and (max-width: 600px) {
     .logo-footer img {
-        top: 55%;
+        top: 57%;
     }
 }
 
