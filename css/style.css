@@ -419,6 +419,7 @@ a {
 
 .item_loop p {
     font-size: 13px;
+    line-height: 1;
 }
 
 
@@ -440,7 +441,7 @@ a {
         width: 100px;
     }
     .loop_container {
-        padding: 42px;
+        padding: 50px;
     }
     .item_loop p {
         font-size: 12px;
