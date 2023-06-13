@@ -869,7 +869,6 @@ a {
     align-items: center;
     justify-content: center;
     margin-top: 8px;
-    margin-right: 24px;
 }
 
 .nav-list_footer li+li {
@@ -896,13 +895,18 @@ a {
 /* ロゴ */
 .logo-footer img {
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 10%;
     z-index: 10;
 }
 
+@media screen and (max-width: 600px) {
+    .logo-footer img {
+        top: 55%;
+    }
+}
 
 /* コピーライト */
 .copyright {
