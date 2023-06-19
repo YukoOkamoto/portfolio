@@ -597,6 +597,10 @@ a {
 
 
 /* テキストエリア */
+.wrapper_description-web {
+    width: 44%;
+}
+
 .description_wrapper {
     width: 80%;
     margin: 16px;
