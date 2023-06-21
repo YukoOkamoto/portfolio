@@ -480,6 +480,10 @@ a {
     margin-bottom: 64px;
 }
 
+.text-wrapper_description-web {
+    width: 44%;
+}
+
 .contents_description-web,.slider {
     height: 40%;
 }
@@ -597,10 +601,6 @@ a {
 
 
 /* テキストエリア */
-.wrapper_description-web {
-    width: 44%;
-}
-
 .description_wrapper {
     width: 80%;
     margin: 16px;
