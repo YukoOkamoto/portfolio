@@ -309,45 +309,23 @@ a {
     }
 }
 
-.circle-before_yellow-bg {
-    display: block;
-    background-color: #FBFED2;
-    position: relative;
-    width: 120vw;
-    height: 10vw;
-    border-radius: 50% 50% 0 0;
-    left: 50%;
-    transform: translateX(-50%) scale(1);
-    overflow: hidden;
-    z-index: 1;
-}
-
-.yellow {
-    background-color: #FBFED2;
-    padding-bottom: 32px;
-}
-
-.circle-after_yellow-bg {
-    display: block;
-    background-color: #FBFED2;
-    position: relative;
-    width: 120vw;
-    height: 10vw;
-    border-radius: 0 0 50% 50%;
-    left: 50%;
-    transform: translateX(-50%) scale(1);
-    z-index: 1;
-}
-
 .inner-yellow {
-    position: relative;
-    z-index: 10;
     text-align: center;
+    background-color: #FBFED2;
+    position: relative;
+    width: 150vw;
+    height: 120vh;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    padding: 100px 0;
+    z-index: 1;
 }
 
 @media screen and (max-width: 600px) {
-    .circle-after_yellow-bg {
-        height: 34vw;
+    .inner-yellow {
+        height: 55vh;
+        padding: 16px 0;
     }
 }
 
@@ -449,17 +427,28 @@ a {
 }
 
 /* ALL_WORKS-FOOTER */
-.all-works_footer {
+.all-works {
     position: relative;
-    top: -120px;
+    top: -250px;
+}
+
+.all-skills-contact {
+    position: relative;
+    top: -400px;
 }
 
 /* WORKS-WEB green */
 .green {
     position: relative;
     background-color: #DFFCED;
-    padding-top: 16%;
+    padding-top: 29%;
     z-index: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .green {
+        top: 80px;
+    }
 }
 
 /* flexエリア */
@@ -732,7 +721,8 @@ a {
     position: relative;
     background-color: #E5FBFC;
     z-index: 1;
-    padding: 16px 0;
+    padding-top: 16px;
+    padding-bottom: 130px;
 }
 
 .side-title,.side-blue {
@@ -778,35 +768,6 @@ a {
     top: -40px;
 }
 
-.yellow {
-    background-color: #FBFED2;
-    padding-bottom: 32px;
-}
-
-.skills-circle-before_yellow-bg {
-    display: block;
-    background-color: #FBFED2;
-    position: relative;
-    width: 120vw;
-    height: 9vw;
-    border-radius: 50% 50% 0 0;
-    left: 50%;
-    transform: translateX(-50%) scale(1);
-    z-index: 1;
-}
-
-.skills-circle-after_yellow-bg {
-    display: block;
-    background-color: #FBFED2;
-    position: relative;
-    width: 120vw;
-    height: 12vw;
-    border-radius: 0 0 50% 50%;
-    left: 50%;
-    transform: translateX(-50%) scale(1);
-    z-index: 1;
-}
-
 .description_skills {
     margin-top: 64px;
 }
@@ -823,7 +784,7 @@ a {
 
 /* CONTACT */
 .contact-container {
-    padding-top: 64px;
+    padding-top: 80px;
 }
 /* テキストエリア */
 .text-area_contact {
