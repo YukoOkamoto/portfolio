@@ -309,23 +309,30 @@ a {
     }
 }
 
-.inner-yellow {
+.inner-yellow,.inner-yellow-skills {
     text-align: center;
     background-color: #FBFED2;
     position: relative;
     width: 150vw;
-    height: 120vh;
+    height: 100vh;
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%) scale(1);
-    padding: 100px 0;
+    padding: 150px 0;
     z-index: 1;
 }
 
 @media screen and (max-width: 600px) {
     .inner-yellow {
-        height: 55vh;
+        width: 160vw;
+        height: 80vh;
         padding: 16px 0;
+    }
+
+    .inner-yellow-skills {
+        width: 190vw;
+        height: 110vh;
+        padding: 40px 0;
     }
 }
 
@@ -347,6 +354,10 @@ a {
 }
 
 @media screen and (max-width: 600px) {
+    .text-area {
+        margin: 0 auto;
+        width: 62%;
+    }
     .name_about {
         margin-top: 16px;
     }
@@ -374,7 +385,7 @@ a {
 /* 写真ループエリア */
 .loop_container {
     position: relative;
-    padding: 60px;
+    padding: 70px;
     display: flex;
     overflow: hidden;
     text-align: center;
@@ -419,7 +430,7 @@ a {
         width: 100px;
     }
     .loop_container {
-        padding: 50px;
+        padding: 30px 0 60px 0;
     }
     .item_loop p {
         font-size: 12px;
@@ -448,6 +459,7 @@ a {
 @media screen and (max-width: 600px) {
     .green {
         top: 80px;
+        padding: 29% 0;
     }
 }
 
@@ -729,6 +741,12 @@ a {
     color: #A2B2B3;
 }
 
+@media screen and (max-width: 768px) {
+    .blue {
+        top: 70px;
+    }
+}
+
 /* テキストエリア */
 .list-banner {
     width: 40%;
@@ -768,6 +786,12 @@ a {
     top: -40px;
 }
 
+@media screen and (max-width: 768px) {
+    .skills-yellow {
+        top: 56px;
+    }
+}
+
 .description_skills {
     margin-top: 64px;
 }
@@ -780,6 +804,18 @@ a {
 .skills-list td {
     display: block;
     margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+    .skills-list {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills-list {
+        width: 50%;
+    }
 }
 
 /* CONTACT */
