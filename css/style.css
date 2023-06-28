@@ -615,9 +615,11 @@ a {
 }
 
 .list_description th {
+    display: inline-block;
     font-size: 24px;
     font-weight: bold;
     line-height: 1.3;
+    margin-top: 16px;
 }
 
 .list_description td {

@@ -15,22 +15,30 @@ main {
     overflow: hidden;
 }
 
-.bg_about-page {
-    display: block;
+.bg-white_about-page {
     background-color: #fff;
     position: relative;
-    width: 120vw;
-    height: 10vw;
+    width: 200vw;
     border-radius: 50% 50% 0 0;
     left: 50%;
     transform: translateX(-50%) scale(1);
+    padding: 150px 0;
     z-index: 1;
 }
 
-.bg-white_about-page {
-    background-color: #fff;
-    padding-bottom: 64px;
+@media screen and (max-width: 900px) {
+    .bg-white_about-page {
+        width: 260vw;
+    }
 }
+
+@media screen and (max-width: 600px) {
+    .bg-white_about-page {
+        width: 360vw;
+        padding: 100px 0;
+    }
+}
+
 
 /*  flex  */
 .flex_about-page {
@@ -38,6 +46,7 @@ main {
     justify-content: space-evenly;
     align-items: center;
     margin: 64px auto;
+    width: 34%;
 }
 
 @media screen and (max-width: 600px) {
@@ -61,6 +70,12 @@ main {
 /* テキストエリア */
 .text-area_about-page {
     margin: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .text-area_about-page {
+        width: 60%;
+    }
 }
 
 /* 氏名 */
@@ -165,7 +180,8 @@ main {
 
 @media screen and (max-width: 900px) {
     .biography_wrapper {
-        margin: 82px 0 0 90px;
+        margin: 82px 0 0 36%;
+        width: 37%;
     }
     .list_biography::before {
         width: 130px;
@@ -175,7 +191,8 @@ main {
 
 @media screen and (max-width: 600px) {
     .biography_wrapper {
-        margin: 82px 0 0 40px;
+        margin: 82px 0 0 40%;
+        width: 24%;
     }
     .biography_wrapper li {
         position: relative;
@@ -222,6 +239,12 @@ main {
     border-radius: 10%;
 }
 
+@media screen and (max-width: 900px) {
+    .content_biography-gray {
+        padding: 32px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .content_biography-gray {
         padding: 32px;
@@ -229,7 +252,7 @@ main {
     .content_biography h3,
     .content_biography-gray h3 {
     font-size: 18px;
-}
+    }
 }
 
 
@@ -263,7 +286,19 @@ main {
     background:linear-gradient(transparent 50%, #E8D575 20%);
 }
 
+@media screen and (max-width: 900px) {
+    .opportunity_about-page {
+        width: 36%;
+    }
+    .sub-title_about-page {
+        margin: 24px 16px;
+    }
+}
+
 @media screen and (max-width: 600px) {
+    .opportunity_about-page {
+        width: 27%;
+    }
     .opportunity_about-page p,
     .title_about-page  {
         margin: 16px;
