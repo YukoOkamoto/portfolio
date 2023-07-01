@@ -309,12 +309,25 @@ a {
     }
 }
 
-.inner-yellow,.inner-yellow-skills {
+.inner-yellow {
     text-align: center;
     background-color: #FBFED2;
     position: relative;
     width: 150vw;
-    height: 100vh;
+    height: 100%;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    padding: 150px 0;
+    z-index: 1;
+}
+
+.inner-yellow-skills {
+    text-align: center;
+    background-color: #FBFED2;
+    position: relative;
+    width: 150vw;
+    height: 100%;
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%) scale(1);
@@ -331,7 +344,7 @@ a {
 
     .inner-yellow-skills {
         width: 190vw;
-        height: 110vh;
+        height: 116vh;
         padding: 40px 0;
     }
 
@@ -448,6 +461,12 @@ a {
 .all-skills-contact {
     position: relative;
     top: -400px;
+}
+
+@media screen and (max-width: 768px) {
+    .all-skills-contact {
+        top: -100px;
+    }    
 }
 
 /* WORKS-WEB green */
@@ -780,18 +799,78 @@ a {
 .skills-yellow {
     position: relative;
     width: 100%;
+    top: 240px;
     overflow: hidden;
-    top: -40px;
-}
-
-@media screen and (max-width: 768px) {
-    .skills-yellow {
-        top: 0;
-    }
 }
 
 .description_skills {
     margin-top: 64px;
+}
+
+.bird_skills-yellow {
+    display: inline-block;
+    width: 30%;
+    position: absolute;
+    top: 16%;
+    left: 8%;
+    z-index: 100;
+}
+
+.wood-left_skills-yellow {
+    display: inline-block;
+    width: 18%;
+    position: absolute;
+    top: 16%;
+    right: 24%;
+    z-index: 100;
+}
+
+.wood-right_skills-yellow {
+    display: inline-block;
+    width: 18%;
+    position: absolute;
+    top: 24%;
+    right: 6%;
+    z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+    .skills-yellow {
+        top: -100px;
+    }
+    .description_skills {
+        margin-top: 24px;
+    }
+    .bird_skills-yellow {
+        width: 32%;
+        top: -10%;
+        left: 8%;
+    }
+    .wood-left_skills-yellow {
+        width: 20%;
+        top: -11%;
+        right: 20%;
+    }
+    
+    .wood-right_skills-yellow {
+        width: 20%;
+        top: -5%;
+        right: 3%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .bird_skills-yellow {
+        top: 0;
+    }
+    .wood-left_skills-yellow {
+        width: 16%;
+        top: 8%;
+    }
+    .wood-right_skills-yellow {
+        width: 16%;
+        top: 16%;
+    }
 }
 
 .skills-list {
@@ -844,6 +923,23 @@ a {
     border-radius: 100px;
 }
 
+/* イラスト */
+.contact-container::after {
+    content: "";
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    background-image: url(../images/img_skill03.png);
+    background-size: contain;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container::after {
+        width: 300px;
+        height: 300px;
+    }
+}
 
 /* footer 点線 */
 .footer {
