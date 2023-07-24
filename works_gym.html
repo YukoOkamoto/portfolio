@@ -25,6 +25,9 @@
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="icon" href="images/logo_yuko.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/menu.js"></script>
@@ -70,59 +73,53 @@
             <!-- 背景・タイトル -->
             <div class="about-wapper">
                 <div class="bg-white_about-page">
-                    <h2 class="title">WORKS</h2>
+                    <!-- タイトル -->
+                    <h2 id="works" class="title-en">Works</h2>
+                    <h3 id="works" class="title-jp">制作</h3>
                     <h3 class="sub-title_works-page">パーソナルトレーニングのジムのLP</h3>
                     <h4 class="goal-title_works-page">無料体験の予約を増やしていきたいのでLPをつくりたい</h4>
 
-                    <!-- flex -->
-                    <div class="flex_works-page">
-                        <!-- テキストエリア -->
-                        <div class="description_wrapper">
-                            <!-- ジム -->
-                            <div class="contents_description-web">
-                                <table class="list_description">
-                                    <tr><th>概要</th></tr>
-                                    <tr><td>パーソナルトレーニングのジムの運営</td></tr>
-                                    <tr><th>目的</th></tr>
-                                    <tr><td>無料体験の予約を増やしていきたいのでLPをつくりたい</td></tr>
-                                    <tr><th>ターゲット</th></tr>
-                                    <tr><td>20〜40代女性</td></tr>
-                                    <tr><td>働き世代のキャリアウーマン</td></tr>
-                                    <tr><td>アスリート志向より健康/美容志向</td></tr>
-                                    <tr><th>要望</th></tr>
-                                    <tr><td>新規獲得につながるサイトにリニューアルしたい</td></tr>
-                                    <tr><td>スタイリッシュで女性が通いたくなるおしゃれなデザイン</td></tr>
-                                    <tr><td>仕事終わりにライフスタイルの一貫に取り入れるイメージ</td></tr>
-                                    <tr><td>ロゴが白黒なのでモノトーンで差し色で青っぽい色がいい</td></tr>
-                                    <tr><th>制作範囲</th></tr>
-                                    <tr><td>ヒアリング/デザイン/コーディング</td></tr>
-                                    <tr><th>制作期間</th></tr>
-                                    <tr><td>1カ月</td></tr>
-                                    <tr><th>使用ツール</th></tr>
-                                    <tr><td>Figma / Visual Studio Code / GitHub</td></tr>
-                                    <tr><th>使用言語</th></tr>
-                                    <tr><td>HTML / CSS / jQuery</td></tr>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- スライド画像エリア -->
-                        <div class="slider_wrapper slider_wrapper_works-page">
-                            <!-- ジム -->
-                            <ul class="slider slider_works-page"> 
-                                <li class="swipe-slide"><img src="images/gym01.png"></li>
-                                <li class="swipe-slide"><img src="images/gym02.png"></li>
-                                <li class="swipe-slide"><img src="images/gym03.png"></li>
-                                <li class="swipe-slide"><img src="images/gym04.png"></li>
-                            </ul>
-                        </div>
+                    <!-- スライド画像エリア -->
+                    <div class="slider_wrapper slider_wrapper-works">
+                        <!-- ジム -->
+                        <ul class="slider"> 
+                            <li class="swipe-slide"><img src="images/gym01.png"></li>
+                            <li class="swipe-slide"><img src="images/gym02.png"></li>
+                            <li class="swipe-slide"><img src="images/gym03.png"></li>
+                            <li class="swipe-slide"><img src="images/gym04.png"></li>
+                        </ul>
                     </div>
-                    <!-- flex END -->
+                    <!-- ジム -->
+                    <div class="text-wrapper_description-web text-wrapper_description-web-works">
+                        <table class="list_description">
+                            <tr><th>概要</th></tr>
+                            <tr><td>パーソナルトレーニングのジムの運営</td></tr>
+                            <tr><th>目的</th></tr>
+                            <tr><td>無料体験の予約を増やしていきたいのでLPをつくりたい</td></tr>
+                            <tr><th>ターゲット</th></tr>
+                            <tr><td>20〜40代女性</td></tr>
+                            <tr><td>働き世代のキャリアウーマン</td></tr>
+                            <tr><td>アスリート志向より健康/美容志向</td></tr>
+                            <tr><th>要望</th></tr>
+                            <tr><td>新規獲得につながるサイトにリニューアルしたい</td></tr>
+                            <tr><td>スタイリッシュで女性が通いたくなるおしゃれなデザイン</td></tr>
+                            <tr><td>仕事終わりにライフスタイルの一貫に取り入れるイメージ</td></tr>
+                            <tr><td>ロゴが白黒なのでモノトーンで差し色で青っぽい色がいい</td></tr>
+                            <tr><th>制作範囲</th></tr>
+                            <tr><td>ヒアリング/デザイン/コーディング</td></tr>
+                            <tr><th>制作期間</th></tr>
+                            <tr><td>1カ月</td></tr>
+                            <tr><th>使用ツール</th></tr>
+                            <tr><td>Figma / Visual Studio Code / GitHub</td></tr>
+                            <tr><th>使用言語</th></tr>
+                            <tr><td>HTML / CSS / jQuery</td></tr>
+                        </table>
+                    </div>
+                    <!-- HOMEボタン -->
+                    <div class="btn-more_wrapper">
+                        <a class="btn-more" href="index.html#works">制作一覧</a>
+                    </div>
                 </div>
-            </div>
-
-            <!-- HOMEボタン -->
-            <div class="btn-more_wrapper">
-                <a class="btn-more" href="index.html#works" >一覧</a>
             </div>
         </main>
     </div>

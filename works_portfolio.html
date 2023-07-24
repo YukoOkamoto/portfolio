@@ -25,6 +25,9 @@
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="icon" href="images/logo_yuko.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/menu.js"></script>
@@ -70,56 +73,51 @@
             <!-- 背景・タイトル -->
             <div class="about-wapper">
                 <div class="bg-white_about-page">
-                    <h2 class="title">WORKS</h2>
+                    <!-- タイトル -->
+                    <h2 id="works" class="title-en">Works</h2>
+                    <h3 id="works" class="title-jp">制作</h3>
                     <h3 class="sub-title_works-page">自分のポートフォリオサイト</h3>
                     <h4 class="goal-title_works-page">自分の経歴・スキル・デザインを目指すきっかけなどを伝える</h4>
 
-                    <!-- flex -->
-                    <div class="flex_works-page">
-                        <!-- テキストエリア -->
-                        <div class="description_wrapper">
-                            <!-- ジム -->
-                            <div class="contents_description-web">
-                                <table class="list_description">
-                                    <tr><th>概要</th></tr>
-                                    <tr><td>自分のポートフォリオサイト</td></tr>
-                                    <tr><th>目的</th></tr>
-                                    <tr><td>自分の経歴・スキル・デザインを目指すきっかけなどを伝える</td></tr>
-                                    <tr><th>ターゲット</th></tr>
-                                    <tr><td>採用担当者・デザイナー</td></tr>
-                                    <tr><th>心掛けたこと</th></tr>
-                                    <tr><td>これまでブライダルやカスタマーサポート、更に海外で見てきた経験の色の多さと、どんな環境であっても、たとえ言葉が通じなくても明るく振る舞い、仲間と一緒に進んでいく自分のキャラクターを色と曲線で表現。</td></tr>
-                                    <tr><td>デザインは、シンプルに1カラムとしあくまでも制作物を見ていただけるようにした。</td></tr>
-                                    <tr><th>制作範囲</th></tr>
-                                    <tr><td>ライティング / デザイン / コーディング</td></tr>
-                                    <tr><th>制作期間</th></tr>
-                                    <tr><td>3週間</td></tr>
-                                    <tr><th>使用ツール</th></tr>
-                                    <tr><td>Figma / Visual Studio Code / photoshop/ Illustrator / GitHub</td></tr>
-                                    <tr><th>使用言語</th></tr>
-                                    <tr><td>HTML / CSS / jQuery</td></tr>
-                                </table>
-                            </div>
-                        </div>
-                        <!-- スライド画像エリア -->
-                        <div class="slider_wrapper slider_wrapper_works-page">
-                            <!-- ポートフォリオ -->
-                            <ul class="slider slider_works-page"> 
-                                <li class="swipe-slide"><img src="images/portfolio01.png"></li>
-                                <li class="swipe-slide"><img src="images/portfolio02.png"></li>
-                                <li class="swipe-slide"><img src="images/portfolio03.png"></li>
-                                <li class="swipe-slide"><img src="images/portfolio04.png"></li>
-                            </ul>
-                        </div>
+                    <!-- スライド画像エリア -->
+                    <div class="slider_wrapper slider_wrapper-works">
+                        <!-- ポートフォリオ -->
+                        <ul class="slider"> 
+                            <li class="swipe-slide"><img src="images/portfolio01.png"></li>
+                            <li class="swipe-slide"><img src="images/portfolio02.png"></li>
+                            <li class="swipe-slide"><img src="images/portfolio03.png"></li>
+                            <li class="swipe-slide"><img src="images/portfolio04.png"></li>
+                        </ul>
                     </div>
-                    <!-- flex END -->
+                    <!-- ポートフォリオ -->
+                    <div class="text-wrapper_description-web text-wrapper_description-web-works">
+                        <table class="list_description">
+                            <tr><th>概要</th></tr>
+                            <tr><td>自分のポートフォリオサイト</td></tr>
+                            <tr><th>目的</th></tr>
+                            <tr><td>自分の経歴・スキル・デザインを目指すきっかけなどを伝える</td></tr>
+                            <tr><th>ターゲット</th></tr>
+                            <tr><td>採用担当者・デザイナー</td></tr>
+                            <tr><th>心掛けたこと</th></tr>
+                            <tr><td>これまでブライダルやカスタマーサポート、更に海外で見てきた経験の色の多さと、どんな環境であっても、たとえ言葉が通じなくても明るく振る舞い、仲間と一緒に進んでいく自分のキャラクターを色と曲線で表現。</td></tr>
+                            <tr><td>デザインは、シンプルに1カラムとしあくまでも制作物を見ていただけるようにした。</td></tr>
+                            <tr><th>制作範囲</th></tr>
+                            <tr><td>ライティング / デザイン / コーディング</td></tr>
+                            <tr><th>制作期間</th></tr>
+                            <tr><td>3週間</td></tr>
+                            <tr><th>使用ツール</th></tr>
+                            <tr><td>Figma / Visual Studio Code / photoshop/ Illustrator / GitHub</td></tr>
+                            <tr><th>使用言語</th></tr>
+                            <tr><td>HTML / CSS / jQuery</td></tr>
+                        </table>
+                    </div>
+                    <!-- HOMEボタン -->
+                    <div class="btn-more_wrapper">
+                        <a class="btn-more" href="index.html#works" >制作一覧</a>
+                    </div>
                 </div>
             </div>
 
-            <!-- HOMEボタン -->
-            <div class="btn-more_wrapper">
-                <a class="btn-more" href="index.html#works" >一覧</a>
-            </div>
         </main>
     </div>
 
