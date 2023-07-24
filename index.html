@@ -23,6 +23,9 @@
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="icon" href="images/logo_yuko.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/menu.js"></script>
@@ -75,7 +78,8 @@
                 <!-- インナー要素 -->
                 <div class="inner-yellow">
                     <!-- タイトル -->
-                    <h2 class="title">ABOUT</h2>
+                    <h2 class="title-en">About</h2>
+                    <h3 class="title-jp">自己紹介</h3>
                     <!-- テキストエリア -->
                     <div class="text-area">
                         <!-- 氏名 -->
@@ -175,7 +179,8 @@
                 <!-- インナー要素 -->
                 <div class="container">
                     <!-- タイトル -->
-                    <h2 id="works" class="title">WORKS</h2>
+                    <h2 id="works" class="title-en">Works</h2>
+                    <h3 id="works" class="title-jp">制作</h3>
                     <!-- flexエリア -->
                     <div class="flex_works">
                         <!-- サイドタイトルエリア -->
@@ -186,8 +191,17 @@
                         <!-- サイドタイトルエリア END -->
                         <!-- テキストエリア -->
                         <div class="description_wrapper">
-                            <!-- ジム -->
                             <div class="contents_description-web">
+                                <!-- スライド写真 -->
+                                <div class="slider_wrapper">
+                                    <ul class="slider"> 
+                                        <li class="swipe-slide"><img src="images/gym01.png"></li>
+                                        <li class="swipe-slide"><img src="images/gym02.png"></li>
+                                        <li class="swipe-slide"><img src="images/gym03.png"></li>
+                                        <li class="swipe-slide"><img src="images/gym04.png"></li>
+                                    </ul>
+                                </div>
+                                <!-- ジム -->
                                 <div class="text-wrapper_description-web">
                                     <table class="list_description">
                                         <tr><th>概要</th></tr>
@@ -204,19 +218,19 @@
                                         <a class="btn-more" href="works_gym.html">more</a>
                                     </div>
                                 </div>
-                                <!-- スライド写真 -->
-                                <div class="slider_wrapper">
-                                    <ul class="slider"> 
-                                        <li class="swipe-slide"><img src="images/gym01.png"></li>
-                                        <li class="swipe-slide"><img src="images/gym02.png"></li>
-                                        <li class="swipe-slide"><img src="images/gym03.png"></li>
-                                        <li class="swipe-slide"><img src="images/gym04.png"></li>
-                                    </ul>
-                                </div>
                             </div>
 
                             <!-- ポートフォリオ -->
-                            <div class="contents_description-web">
+                            <div class="contents_description-web portfolio_description-web">
+                                <!-- スライド画像エリア -->
+                                <div class="slider_wrapper">
+                                    <ul class="slider"> 
+                                        <li class="swipe-slide"><img src="images/portfolio01.png"></li>
+                                        <li class="swipe-slide"><img src="images/portfolio02.png"></li>
+                                        <li class="swipe-slide"><img src="images/portfolio03.png"></li>
+                                        <li class="swipe-slide"><img src="images/portfolio03.png"></li>
+                                    </ul>
+                                </div>
                                 <div class="text-wrapper_description-web">
                                     <table class="list_description">
                                         <tr><th>概要</th></tr>
@@ -230,15 +244,6 @@
                                     <div class="btn-more_wrapper works">
                                         <a class="btn-more" href="works_portfolio.html">more</a>
                                     </div>
-                                </div>
-                                <!-- スライド画像エリア -->
-                                <div class="slider_wrapper">
-                                    <ul class="slider"> 
-                                        <li class="swipe-slide"><img src="images/portfolio01.png"></li>
-                                        <li class="swipe-slide"><img src="images/portfolio02.png"></li>
-                                        <li class="swipe-slide"><img src="images/portfolio03.png"></li>
-                                        <li class="swipe-slide"><img src="images/portfolio03.png"></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -337,23 +342,45 @@
                         <!-- インナー要素 -->
                         <div class="inner-yellow-skills">
                             <!-- タイトル -->
-                            <h2 id="skills" class="title">SKILLS</h2>
+                            <h2 id="skills" class="title-en">Skills</h2>
+                            <h3 id="skills" class="title-jp">能力</h3>
                             <!-- テーブルエリア -->
                             <div class="description_skills">
-                                <table class="list_description skills-list">
-                                    <tr><th>HTML / CSS</th></tr>
-                                    <tr><td>レスポンシブ対応を考慮したWebページのコーディングができます。エディタは主にVisualStudio Codeを使用しています。</td></tr>
-                                    <tr><th>JavaScript</th></tr>
-                                    <tr><td>スライダーやポップアップメニューなどのWebページで動きを表現するコードを、主にjQueryを用いて記述できます。</td></tr>
-                                    <tr><th>Figma</th></tr>
-                                    <tr><td>WEBデザイン制作の際、デザインの作成や共有を行うために使用しています。</td></tr>
-                                    <tr><th>llustrator</th></tr>
-                                    <tr><td>バナー制作やWEBサイト内で使用するイラストデータの加工の際に使用しています</td></tr>
-                                    <tr><th>Photoshop</th></tr>
-                                    <tr><td>写真の加工が必要な場合に使用します</td></tr>
-                                    <tr><th>GitHub</th></tr>
-                                    <tr><td>WEBサイト制作の際はGitHubで進捗とコードベースの管理をしており、必要であれば第三者からのレビューをもらっています。</td></tr>
-                                </table>
+                                <ul class="skills-list">
+                                    <li>
+                                        <img class="skills-icon" src="images/skills_code.png" alt="HTML / CSS">
+                                        <h4>HTML / CSS</h4>
+                                        <p>レスポンシブ対応を考慮したWebページのコーディングができます。エディタは主にVisualStudio Codeを使用しています。</p>
+                                    </li>
+                                    <li>
+                                        <img class="skills-icon" src="images/skills_js.png" alt="JavaScript">
+                                        <h4>JavaScript</h4>
+                                        <p>スライダーやポップアップメニューなどのWebページで動きを表現するコードを、主にjQueryを用いて記述できます。</p>
+                                    </li>
+                                    <li>
+                                        <img class="skills-icon" src="images/skills_figma.png" alt="Figma">
+                                        <h4>Figma</h4>
+                                        <p>WEBデザイン制作の際、デザインの作成や共有を行うために使用しています。</p>
+                                    </li>
+                                </ul>
+
+                                <ul class="skills-list">
+                                    <li>
+                                        <img class="skills-icon" src="images/skills_illustrator.png" alt="llustrator">
+                                        <h4>llustrator</h4>
+                                        <p>バナー制作やWEBサイト内で使用するイラストデータの加工の際に使用しています</p>
+                                    </li>
+                                    <li>
+                                        <img class="skills-icon" src="images/skills_photoshop.png" alt="Photoshop">
+                                        <h4>Photoshop</h4>
+                                        <p>写真の加工が必要な場合に使用します</p>
+                                    </li>
+                                    <li>
+                                        <img class="skills-icon" src="images/skills_github.png" alt="GitHub">
+                                        <h4>GitHub</h4>
+                                        <p>WEBサイト制作の際はGitHubで進捗とコードベースの管理をしており、必要であれば第三者からのレビューをもらっています。</p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -363,18 +390,19 @@
             <!-- CONTACT -->
             <div class="container contact-container">
                 <!-- タイトル -->
-                <h2 id="contact" class="title">CONTACT</h2>
+                <h2 id="contact" class="title-en title-en-contact">Contact</h2>
+                <h3 id="contact" class="title-jp">お問合せ</h3>
+                <!-- イラスト -->
+                <div class="letter_contact">
+                    <img src="images/img_skill03.png" alt="letter">
+                </div>
                 <!-- テキストエリア -->
                 <div class="text-area_contact">
                     <p>お気軽にお問合せください</p>
                     <p>アドバイスなどのお声がけもお待ちしております</p>
                 </div>
                 <!-- 問い合わせボタン -->
-                <div class="contact_btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLScreHabt9bWBAGaAzcxRTwQpSY5CZNNPLYkR5RrwJQyBJhMew/viewform?usp=sf_link">お問合せフォーム</a></div>
-                <!-- イラスト -->
-                <!-- <div class="letter_contact">
-                    <img src="images/img_skill03.png" alt="letter">
-                </div> -->
+                <div class="contact_btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLScreHabt9bWBAGaAzcxRTwQpSY5CZNNPLYkR5RrwJQyBJhMew/viewform?usp=sf_link" target="_blank">お問合せフォーム</a></div>
             </div>
             <!-- CONTACT END -->
         </div>

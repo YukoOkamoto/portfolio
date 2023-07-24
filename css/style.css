@@ -55,7 +55,8 @@ a {
 
 .btn-more_wrapper > .btn-more {
     border-bottom: 5px solid #131313;
-    font-size: 24px;
+    font-size: 32px;
+    font-weight: bold;
     padding-bottom: 16px;
     transition: padding-bottom 0.2s, margin-bottom 0.2s;
 }
@@ -72,7 +73,8 @@ a {
 
 .btn_about > .btn-more {
     border-bottom: 5px solid #131313;
-    font-size: 24px;
+    font-size: 32px;
+    font-weight: bold;
     padding-bottom: 16px;
     transition: padding-bottom 0.2s, margin-bottom 0.2s;
 }
@@ -89,17 +91,29 @@ a {
 }
 
 /* --タイトル */
-.title {
+ .title-en{
     display: block;
-    font-size: 32px;
+    font-family: "Hurricane";
+    font-size: 120px;
     font-weight: 400;
+    color: #E8D575;
+    line-height: 1;
+    text-align: center;
+}
+
+.title-jp {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1;
     text-align: center;
 }
 
 @media screen and (max-width: 600px) {
-    .title {
-        font-size: 24px;
-        padding-top: 48px;
+    .title-en {
+        font-size: 48px;
+    }
+    .title-jp {
+        font-size: 16px;
     }
 }
 
@@ -338,13 +352,11 @@ a {
 @media screen and (max-width: 600px) {
     .inner-yellow {
         width: 160vw;
-        height: 80vh;
-        padding: 16px 0;
+        padding: 48px 0;
     }
 
     .inner-yellow-skills {
         width: 190vw;
-        height: 116vh;
         padding: 40px 0;
     }
 
@@ -356,11 +368,12 @@ a {
 .name_about {
     display: flex;
     flex-direction: column;
-    margin-top: 24px;
+    margin-top: 32px;
 }
 
 .jp-name_about {
     font-size: 24px;
+    font-weight: bold;
     line-height: 1;
 }
 
@@ -473,13 +486,13 @@ a {
 .green {
     position: relative;
     background-color: #DFFCED;
-    padding-top: 29%;
+    padding-top: 26%;
     z-index: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .green {
-        top: 30px;
+        top: 90px;
         padding: 40% 0;
     }
 }
@@ -492,22 +505,24 @@ a {
 }
 
 .contents_description-web {
-    display: flex;
     margin-bottom: 40px;
+}
+
+.portfolio_description-web {
+    margin-top: 64px;
 }
 
 .contents_description-banner {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     margin-bottom: 64px;
 }
 
 .text-wrapper_description-web {
-    width: 44%;
-}
-
-.contents_description-web,.slider {
-    height: 40%;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .contents_description-banner,.banner {
@@ -515,11 +530,6 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-    .contents_description-web,.contents_description-banner {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-content: center;
-    }
     .contents_description-web,.slider {
         height: 50%;
     }
@@ -529,6 +539,9 @@ a {
     }
     .btn-more_wrapper, .works {
         text-align: center;
+    }
+    .contents_description-banner {
+        flex-direction: column-reverse;
     }
 }
 
@@ -599,13 +612,13 @@ a {
 
 @media screen and (max-width: 600px) {
     .circle-web_side-title {
-        top: -18%;
-        left: 16%;
+        top: -10%;
+        left: 18%;
         width: 236px;
     }
     .circle-banner_side-title {
         top: -24%;
-        left: 16%;
+        left: 18%;
         width: 236px;
     }
     .side-title {
@@ -638,14 +651,14 @@ a {
     font-size: 24px;
     font-weight: bold;
     line-height: 1.3;
-    margin-top: 16px;
 }
 
 .list_description td {
+    display: block;
     font-size: 16px;
     text-indent: 1em;
     line-height: 1.6;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 @media screen and (max-width: 600px) {
@@ -661,21 +674,16 @@ a {
     }
 }
 
-/* ボタン */
-.btn-more_wrapper,.works {
-    text-align: right;
-}
-
 /* スライド画像 */
 .slider_wrapper {
-    width:50%;
+    width:100%;
     margin:16px auto;
     cursor: grab;
 }
 
 .slider img {
     width:100%;
-    max-width: 320px;
+    max-width: 600px;
     height:auto;
     border-radius: 8%;
     object-fit: cover;
@@ -698,6 +706,9 @@ a {
         width:90%;
         margin:0 auto;
         padding-right: 16px;
+    }
+    .slider img {
+        max-width: 300px;
     }
 
 }
@@ -766,7 +777,7 @@ a {
 
 /* テキストエリア */
 .list-banner {
-    width: 40%;
+    width: 50%;
 }
 
 @media screen and (max-width: 768px) {
@@ -779,12 +790,13 @@ a {
 
 /* 画像エリア */
 .banner_wrapper {
-    width:40%;
+    width:50%;
     text-align: center;
+    margin-right: 16px;
 }
 
 .banner img {
-    width: 72%;
+    width: 90%;
 }
 
 @media screen and (max-width: 768px) {
@@ -804,7 +816,7 @@ a {
 }
 
 .description_skills {
-    margin-top: 64px;
+    margin: 64px 0 80px 0;
 }
 
 .bird_skills-yellow {
@@ -874,30 +886,46 @@ a {
 }
 
 .skills-list {
-    margin: 0 auto;
-    padding: 0 24px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
-.skills-list td {
-    display: block;
-    margin-bottom: 16px;
+.skills-list li {
+    width: 16%;
+    margin: 32px;
 }
 
-@media screen and (max-width: 1000px) {
-    .skills-list {
-        width: 60%;
-    }
+.skills-list li>h4 {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
     .skills-list {
         width: 50%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .skills-list li {
+        width: 100%;
+        margin: 0;
+    }
+    .skills-list li>h4 {
+        font-size: 16px;
+    }
+    .skills-list li>p {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    .skills-icon {
+        width: 40px;
     }
 }
 
 /* CONTACT */
-.contact-container {
-    padding-top: 80px;
+.title-en-contact {
+    color: #A2B2B3;
 }
 /* テキストエリア */
 .text-area_contact {
@@ -924,14 +952,8 @@ a {
 }
 
 /* イラスト */
-.contact-container::after {
-    content: "";
-    display: inline-block;
-    width: 500px;
-    height: 500px;
-    background-image: url(../images/img_skill03.png);
-    background-size: contain;
-    vertical-align: middle;
+.letter_contact img {
+    width: 180px;
 }
 
 @media screen and (max-width: 768px) {
@@ -939,7 +961,7 @@ a {
         width: 300px;
         height: 300px;
     }
-}
+} 
 
 /* footer 点線 */
 .footer {

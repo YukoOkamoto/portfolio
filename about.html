@@ -24,6 +24,9 @@
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="icon" href="images/logo_yuko.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/menu.js"></script>
@@ -70,17 +73,27 @@
             <!-- 背景・タイトル -->
             <div class="about-wapper">
                 <div class="bg-white_about-page">
-                    <h2 class="title">ABOUT</h2>
+                    <h2 class="title-en">About</h2>
+                    <h3 class="title-jp">自己紹介</h3>
                     <!-- flex -->
                     <div class="flex_about-page">
                         <!-- 自分写真エリア -->
                         <div class="photo_about-page"><img src="images/photo_profile.jpg" alt="Yuko Okaamoto"></div>
                         <!-- テキストエリア -->
                         <div class="text-area_about-page">
-                            <!-- 氏名 -->
-                            <div class="name_about-page">
-                                <span class="jp-name_about">岡本 夕布子</span>
-                                <span class="en-name_about">Yuko Okamoto</span>
+                            <!-- flex -->
+                            <div class="name-link_about-page">
+                                <!-- 氏名 -->
+                                <div class="name_about-page">
+                                    <span class="jp-name_about">岡本 夕布子</span>
+                                    <span class="en-name_about">Yuko Okamoto</span>
+                                </div>
+                                <!-- リンク -->
+                                <div class="link_about-page">
+                                    <a href="https://github.com/YukoOkamoto" target="_blank" rel="noopener noreferrer"><img src="images/logo_github_bk.svg"></a>
+                                    <a href="https://www.wantedly.com/id/okamoto_yuko" target="_blank" rel="noopener noreferrer"><img src="images/logo_Wantedly_color..svg"></a>
+                                    <a href="https://www.facebook.com/yuko.okamoto.125" target="_blank" rel="noopener noreferrer"><img src="images/logo_fb_color.png"></a>
+                                </div>
                             </div>
                             <!-- 自己紹介 -->
                             <div class="introduction_about">
@@ -91,19 +104,13 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- リンクエリア -->
-                        <ul class="link-list">
-                            <li class="btn-link"><a href="https://github.com/YukoOkamoto" target="_blank" rel="noopener noreferrer"><img src="images/logo_github_bk.svg"></a></li>
-                            <li class="btn-link"><a href="https://www.wantedly.com/id/okamoto_yuko" target="_blank" rel="noopener noreferrer"><img src="images/logo_Wantedly_color..svg"></a></li>
-                            <li class="btn-link"><a href="https://www.facebook.com/yuko.okamoto.125" target="_blank" rel="noopener noreferrer"><img src="images/logo_fb_color.png"></a></li>
-                        </ul>
                     </div>
                     <!-- flex END -->
 
                     <!-- 略歴 -->
                     <div class="biography_about-page">
                         <!-- タイトル -->
-                        <h3 class="title">Biography</h3>
+                        <h3 class="title-en title-en-biography">Biography</h3>
                         <!-- 年表 -->
                         <ul class="biography_wrapper">
                             <li class="list_biography list_2011">
@@ -135,7 +142,7 @@
                             <li class="list_biography list_achievement">
                                 <div class="content_biography">
                                 <h3>MedPeer Award 準MVP 受賞</h3>
-                                <a href="https://www.wantedly.com/companies/medpeer/post_articles/341324">https://www.wantedly.com/companies/medpeer/post_articles/341324</a>
+                                <a class="mvp-link" href="https://www.wantedly.com/companies/medpeer/post_articles/341324">https://www.wantedly.com/companies/medpeer/post_articles/341324</a>
                                 </div>
                             </li>
                             <li class="list_biography list_2022">
@@ -181,13 +188,13 @@
                             <span class="bold_about-page">この世界に興味を持ったきっかけです。</span></p>
                     </div>
                     <!-- きっかけ　END -->
+                    <!-- HOMEボタン -->
+                    <div class="btn-more_wrapper">
+                        <a class="btn-more" href="index.html" >HOME</a>
+                    </div>
                 </div>
             </div>
 
-            <!-- HOMEボタン -->
-            <div class="btn-more_wrapper">
-                <a class="btn-more" href="index.html" >HOME</a>
-            </div>
         </main>
     </div>
 

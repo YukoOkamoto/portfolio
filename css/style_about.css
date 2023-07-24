@@ -46,7 +46,8 @@ main {
     justify-content: space-evenly;
     align-items: center;
     margin: 64px auto;
-    width: 34%;
+    width: 36%;
+    max-width: 740px;
 }
 
 @media screen and (max-width: 600px) {
@@ -79,6 +80,19 @@ main {
 }
 
 /* 氏名 */
+.link_about-page a>img {
+    height: 20px;
+    margin-right: 16px;
+}
+
+.name-link_about-page {
+    display: flex;
+}
+
+.en-name_about {
+    margin-right: 16px;
+}
+
 @media screen and (max-width: 600px) {
     .name_about-page {
         display: flex;
@@ -89,14 +103,16 @@ main {
     .en-name_about {
         display: block;
     }
+    .name-link_about-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
 
 /* 自己紹介 */
-.introduction_about ul {
-	margin: 1em 0;
-	padding-left: 40px;
-    list-style: disc;
-}
 
 @media screen and (max-width: 600px) {
     .introduction_about ul {
@@ -104,21 +120,12 @@ main {
     }
 }
 
-/* リンクエリア */
-.link-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-@media screen and (max-width: 600px) {
-    .link-list {
-        flex-direction: row;
-    }
-}
-
 /* 略歴 */
+.title-en-biography {
+    font-size: 40px;
+    color: #131313;
+}
+
 .biography_wrapper {
     display: block;
     margin: 40px auto;
@@ -173,7 +180,7 @@ main {
     content: "2022年";
 } 
 .list_2023::before {
-    content: "2023";
+    content: "2023年";
     background-color: #fff;
     border: 1px dashed #131313;
 } 
@@ -239,6 +246,10 @@ main {
     border-radius: 10%;
 }
 
+.mvp-link {
+    color: #1877F2;
+}
+
 @media screen and (max-width: 900px) {
     .content_biography-gray {
         padding: 32px;
@@ -265,6 +276,7 @@ main {
 }
 
 .title_about-page {
+    font-size: 32px;
     text-align: left;
     margin: 16px;
 }
@@ -274,12 +286,12 @@ main {
     color: #E8D575;
     font-size: 20px;
     font-weight: bold;
-    margin: 24px;
+    margin: 16px 0 16px 24px;
 }
 
 .opportunity_about-page p {
     font-size: 16px;
-    margin: 24px;
+    margin-left: 24px;
 }
 
 .maker_about-page {
@@ -311,6 +323,4 @@ main {
 /* ボタン */
 .btn-more_wrapper {
     text-align: center;
-    padding: 20% 0;
-    margin-bottom: 80px;
 }
